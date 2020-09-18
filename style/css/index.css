@@ -81,6 +81,66 @@ h2 {
     text-decoration: none;
 }
 
+.form-input {
+    border: 1px solid var(--gray);
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #333333;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-checkbox [type="checkbox"] {
+    display: none;
+}
+
+.form-checkbox {
+    padding-left: 30px;
+    position: relative;
+}
+
+.form-checkbox label {
+    position: relative;
+}
+
+.form-checkbox label::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 2px solid var(--gray);
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -30px;
+}
+
+.form-checkbox [type="checkbox"]:checked+label::after {
+    content: "\2714";
+    position: absolute;
+    color: var(--gray);
+    font-weight: 900;
+    font-size: 22px;
+    top: -2px;
+    left: -18px;
+    transform: translateX(-50%);
+    font-family: Noto Sans;
+}
+
+button:focus {
+    border: none!important;
+    border-color: transparent!important;
+    outline: none!important;
+}
+
+.form-input:focus {
+    border: 1px solid var(--blue);
+    background: var(--lithgray);
+    outline: none;
+}
+
 .color-white {
     color: var(--white)!important;
 }
@@ -105,7 +165,8 @@ h2 {
     color: var(--green)!important;
 }
 
-.border-blue {
+.border-blue,
+.border-blue:focus {
     border: 2px solid var(--blue)!important;
 }
 
@@ -368,6 +429,12 @@ h2 {
     max-width: 65%;
 }
 
+#test a {
+    display: block;
+    cursor: pointer;
+    z-index: 9999999999;
+}
+
 .b-attrib {
     width: 79px;
     height: 10px;
@@ -457,7 +524,7 @@ h2 {
 }
 
 .test-cart:hover * {
-    color: var(--white);
+    color: var(--white)!important;
 }
 
 .test-cart:hover .img-woomen {
@@ -1076,4 +1143,65 @@ input[type=range]:focus::-ms-fill-upper {
 
 .table-answer {
     width: 329px;
+}
+
+.modal {
+    background: rgba(41, 119, 232, 0.8);
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-form {
+    z-index: 1000000;
+    padding: 40px 58px 20px;
+    max-width: 600px;
+    ;
+}
+
+.modal-close {
+    width: 40px;
+    height: 40px;
+    background: var(--blue);
+    top: -40px;
+    right: calc(-100% - 18px);
+    transform: translate(50%, -50%);
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    background: var(--white);
+    position: absolute;
+    top: 7px;
+    width: 2px;
+    height: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-form input {
+    margin-bottom: 20px;
+}
+
+.modal-form button {
+    margin-top: 18px;
+}
+
+.modal-form h2 {
+    margin-bottom: 20px;
 }
