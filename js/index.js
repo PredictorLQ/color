@@ -6,4 +6,11 @@ $(document).ready(function() {
             $(this).addClass("bg-green");
         }
     });
+    $("[data-modal]").click(function() {
+        $($(this).attr("data-modal")).fadeIn();
+    });
+    $(".modal-close").click(function() {
+        var modal = $(this).closest(".modal");
+        modal.fadeOut();
+    });
 });
