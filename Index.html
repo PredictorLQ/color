@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/css/index.css" />
     <link rel="stylesheet" href="style/css/index-grid.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 
@@ -40,7 +40,7 @@
                         Дарим детям обучение без трудностей!
                     </div>
                     <div class="grid-header-button">
-                        <a href="" class="header-button-a btn color-white bg-green border-green">Пройти тест онлайн</a>
+                        <a href="Medium.html" class="header-button-a btn color-white bg-green border-green">Пройти тест онлайн</a>
                         <div>
                             <div class="h-100 flex-c-center">
                                 <div class="flex-r-center flex-c-center header-paus radius-cicle bg-white">
@@ -107,7 +107,7 @@
                     <div>Есть ли у меня дислексия?</div>
                 </div>
                 <div class="flex-r-between w-100">
-                    <a href="" class="color-blue">Пройти онлайн тестирование</a>
+                    <a href="Medium.html" class="color-blue">Пройти онлайн тестирование</a>
                     <img src="img/Arrow 1.svg">
                 </div>
             </div>
@@ -120,7 +120,7 @@
                     <div>Пройдите тест вместе с ребеноком</div>
                 </div>
                 <div class="flex-r-between w-100">
-                    <a href="" class="color-blue">Пройти онлайн тестирование</a>
+                    <a href="Medium.html" class="color-blue">Пройти онлайн тестирование</a>
                     <img src="img/Arrow 1.svg">
                 </div>
             </div>
@@ -431,8 +431,8 @@
             </h2>
             <div class="flex-c-center alarm-btn h-100">
                 <div class="flex-r flex-r-between w-100">
-                    <a href="" class="btn color-white bg-blue border-blue">Пройти тест</a>
-                    <a href="" class="btn color-blue border-blue">Записаться на прием</a>
+                    <a href="Medium.html" class="btn color-white bg-blue border-blue">Пройти тест</a>
+                    <button class="btn color-blue border-blue" data-modal="#write">Записаться на прием</button>
                 </div>
             </div>
         </div>
@@ -473,6 +473,31 @@
             </div>
         </div>
     </section>
+    <div class="modal" style="display:none" id="write">
+        <div class="flex-modal flex-r-center flex-c-center w-100 h-100">
+            <div class="modal-form bg-white radius position-relative">
+                <div class="modal-close position-relative">
+
+                </div>
+                <h2 class="text-center color-darkblue">Запись на консультацию</h2>
+                <div class="modal-body">
+                    <label class="color-gray">Ваше имя</label>
+                    <input type="text" class="form-input">
+                    <label class="color-gray">Ваша фамилия</label>
+                    <input type="text" class="form-input">
+                    <label class="color-gray">Номер телефона</label>
+                    <input type="text" class="form-input">
+                    <div class="flex-r-center w-100">
+                        <button class="btn bg-blue color-white">Записаться</button>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="check-agree">
+                        <label class="color-gray" for="check-agree">Нажимая кнопку отправить вы соглашаетесь на обработку персональных данных</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
