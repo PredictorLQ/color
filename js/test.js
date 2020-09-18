@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     });
     $(".btn-again").click(function() {
-        answer = {};
+        answer = [];
         $(".question1").css("display", "block");
         $(".result").css("display", "none");
     });
