@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style/css/index.css" />
+    <link rel="stylesheet" href="style/css/index-grid.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+    <div class="medium">
+        <div class="position-absolute" id="windows"></div>
+        <div class="container  mt-4 pt-2" role="main">
+            <main>
+                <div class="question1">
+                    <h1 class="text-center w-auto color-darkblue" id="question">Вопрос 1</h1>
+                    <div class="text-center color-gray">Выберите в палитре цвет, который максимально соответсвует цвету квадрата</div>
+                    <div class="grid-area">
+                        <div class="radius h-100 w-100" id="anger-div" style="background: hsl(0, 100%,  50%);"></div>
+                        <div class="bg-white radius area-color">
+                            <div class="position-relative color-cicle">
+                                <div id="csd-wheel">
+                                    <div class="wrapper">
+                                        <ul class="wheel">
+                                            <li class="color"></li>
+                                            <li class="color"></li>
+                                            <li class="color"></li>
+                                            <li class="color"></li>
+                                        </ul>
+                                    </div>
+                                    <div id="csd-sample" class="flex-r-center flex-c-center bg-pri-0 radius-cicle position-absolute" style="background-color: hsl(0, 100%, 50%)">
+                                        <div class="position-relative">
+                                            <img class="dot radius-cicle position-absolute" id="csd-dot1" alt="" style="left: 183px; top: 290px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="color-range">
+                                <label for="customRange1"></label>
+                                <input type="range" class="custom-range" id="customRange1" min="0" max="360" value="180">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-r-center w-100">
+                        <button class="btn color-white bg-blue medium-btn button" id="but-1">Далее</button>
+                    </div>
+                </div>
+                <div class="result" style="display: none;">
+                    <h1 class="text-center w-auto color-darkblue"><strong>Ваш результат</strong></h1>
+                    <div class="color-gray text-center w-100">Вы прошли тест с результатом >90%. Консультация специалиста не требуется. </div>
+                    <div class="result-box radius bg-white flex-r-between">
+                        <div class="result-graf"></div>
+                        <div class="answ-res color-gray" id="answ-res"></div>
+                    </div>
+                    <div class="flex-r-center flex-r">
+                        <button class="btn-end btn color-white bg-blue">Завершить</button>
+                        <button class="btn-again btn border-blue color-blue">Пройти еще раз</button>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+</body>
+
+</html>
