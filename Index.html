@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style/css/index.css" />
     <link rel="stylesheet" href="style/css/index-grid.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -242,6 +241,7 @@
                 </div>
                 <div class="color-white">
                     Мы сотрудничаем с Ассоциацией родителей и детей с дислексией
+                    <br/><a href="http://dislexiarf.com" class="color-darkgreen">dislexiarf.com</a>
                 </div>
                 <div class="position-absolute agree-cicle radius-cicle"></div>
             </div>
@@ -259,7 +259,7 @@
                     <img src="img/gramm.svg" alt="">
                 </div>
                 <div class="color-white">
-                    У нас есть сертификаты и лицензии
+                    У нас есть сертификаты и лицензии<br/> <span data-modal="#portfolio" class="c-pointer t-decoration color-darkgreen">Открыть</span>
                 </div>
                 <div class="position-absolute agree-cicle radius-cicle"></div>
             </div>
@@ -476,9 +476,7 @@
     <div class="modal" style="display:none" id="write">
         <div class="flex-modal flex-r-center flex-c-center w-100 h-100">
             <div class="modal-form bg-white radius position-relative">
-                <div class="modal-close position-relative">
-
-                </div>
+                <div class="modal-close position-relative"></div>
                 <h2 class="text-center color-darkblue">Запись на консультацию</h2>
                 <div class="modal-body">
                     <label class="color-gray">Ваше имя</label>
@@ -498,6 +496,27 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="portfolio" style="display: none;">
+        <div class="flex-modal flex-r-center flex-c-center w-100 h-100">
+            <div class="modal-portfolio bg-white radius position-relative">
+                <div class="position-absolute w-100" style="padding-right: 100px;">
+                    <div class="modal-close position-relative"></div>
+                </div>
+                <div id="viewport">
+                    <div id="slidewrapper" class="flex-r">
+                        <div class="slide"><img src="img/sertificat_new.png" alt="1" class="slide-img"></div>
+                        <div class="slide"><img src="img/sertificat_new.png" alt="2" class="slide-img"></div>
+                    </div>
+                </div>
+                <div id="prev-btn" class="flex-r-center flex-c-center">
+                    <img src="img/Vector (1).svg" alt="">
+                </div>
+                <div id="next-btn" class="flex-r-center flex-c-center">
+                    <img src="img/Vector (2).svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
