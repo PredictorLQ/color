@@ -5,11 +5,12 @@ var translateWidth = 0;
 $("#slidewrapper").css("width", "calc(100% * " + slideCount + ")");
 $(".slide").css("width", "calc(100% / " + slideCount + ")");
 $(document).ready(function() {
-    $(".grid-answer").click(function() {
-        if ($(this).hasClass("bg-green")) {
-            $(this).removeClass("bg-green");
+    $(".answer-znak").click(function() {
+        var parent = $(this).closest(".grid-answer");
+        if (parent.hasClass("bg-green")) {
+            parent.removeClass("bg-green");
         } else {
-            $(this).addClass("bg-green");
+            parent.addClass("bg-green");
         }
     });
     $("[data-modal]").click(function() {
