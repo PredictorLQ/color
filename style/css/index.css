@@ -57,10 +57,13 @@ h2 {
 
 #test h2,
 #why h2,
-#agree h2,
 #luck h2,
 #static>h2 {
     margin-bottom: 60px;
+}
+
+#agree h2 {
+    margin-bottom: 90px;
 }
 
 .hidde {
@@ -75,7 +78,8 @@ h2 {
     margin-bottom: 30px;
 }
 
-#reviews>h1 {
+#reviews h1,
+#reviews .reviews-items {
     margin-bottom: 47px;
 }
 
@@ -380,6 +384,10 @@ button:focus {
     padding: 30px 88px 0;
 }
 
+.header-phone {
+    font-size: 24px;
+}
+
 .header-top-title {
     font-weight: 600;
     font-size: 24px;
@@ -429,10 +437,9 @@ button:focus {
 }
 
 .header-pause-start {
-    border: 8px solid transparent;
-    border-right: 8px solid var(--blue);
-    border-bottom: 8px solid var(--blue);
-    transform: rotate(-45deg) translate(-15%, -15%);
+    width: 16px!important;
+    height: 16px!important;
+    transform: translateX(15%);
 }
 
 .header-blue {
@@ -767,6 +774,25 @@ button:focus {
 .reviews-cart:hover {
     background: var(--blue);
     color: var(--white);
+}
+
+.reviews-item {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.reviews-item+.reviews-item {
+    margin-left: 30px;
+}
+
+.alarm-div-left {
+    width: 233px;
+    height: 233px;
+    opacity: 0.3;
+    border: 1px solid #F4F5FA;
+    top: -137px;
+    left: -141px;
 }
 
 .alarm-div-top {
