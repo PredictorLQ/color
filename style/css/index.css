@@ -398,8 +398,12 @@ button:focus {
     margin-top: 57px;
 }
 
-.header-body .b-attrib {
+.b-attrib-header {
+    width: 116px;
+    height: 8px;
+    background: #25DBA0;
     margin-top: 98px;
+    margin-bottom: 12px;
 }
 
 .header-body h1 {
