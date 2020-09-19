@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style/css/index.css" />
-    <link rel="stylesheet" href="style/css/index-grid.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/test.js"></script>
 </head>
@@ -17,7 +16,8 @@
             <main>
                 <div class="question1">
                     <h1 class="text-center w-auto color-darkblue" id="question">Вопрос 1</h1>
-                    <div class="text-center color-gray">Выберите в палитре цвет, который максимально соответсвует цвету квадрата</div>
+                    <div class="text-center color-gray">Выберите в палитре цвет, который максимально соответсвует цвету квадрата
+                    </div>
                     <div class="grid-area">
                         <div class="radius h-100 w-100" id="anger-div" style="background: hsl(0, 100%,  50%);"></div>
                         <div class="bg-white radius area-color">
@@ -33,7 +33,7 @@
                                     </div>
                                     <div id="csd-sample" class="flex-r-center flex-c-center bg-pri-0 radius-cicle position-absolute" style="background-color: hsl(0, 100%, 50%)">
                                         <div class="position-relative">
-                                            <img class="dot radius-cicle position-absolute" id="csd-dot1" alt="" style="left: 183px; top: 290px;">
+                                            <div class="dot radius-cicle position-absolute" id="csd-dot1" alt="" style="left: 183px; top: 290px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +52,24 @@
                     <h1 class="text-center w-auto color-darkblue"><strong>Ваш результат</strong></h1>
                     <div class="color-gray text-center w-100">Вы прошли тест с результатом >90%. Консультация специалиста не требуется. </div>
                     <div class="result-box radius bg-white flex-r-between">
-                        <div class="result-graf"></div>
+                        <div class="result-graf position-relative">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 100" class="radius-cicle w-100">
+                                <circle r="47" cx="50" cy="50" class="graf-svg-light"></circle>
+                                <circle r="38" cx="50" cy="50" class="graf-svg-white"></circle>
+                                <circle r="40" class="graf-svg-green" cx="50" cy="50" id="svg-bac"
+                                    style="stroke-dasharray: 180.956, 251.327;"></circle>
+                                <circle r="35" cx="50" cy="50" class="graf-svg-white"></circle>
+                            </svg>
+                            <div class="position-absolute w-100 h-100 graf-res-text">
+                                <div class="flex-r flex-r-center flex-c-center h-100 color-darkblue">
+                                    <div class="flex-r" style="align-items: baseline;">
+                                        <div class="test-svg-result">72</div>
+                                        <h2>%</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="radius-cicle result-graf"></div>
+                        </div>
                         <div class="answ-res color-gray" id="answ-res"></div>
                     </div>
                     <div class="flex-r-center flex-r">
