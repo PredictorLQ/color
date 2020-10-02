@@ -862,7 +862,7 @@ button:focus {
 }
 
 .array img {
-    width: 50px;
+    width: 50px!important;
     height: auto;
     cursor: pointer;
     margin-right: 0!important;
