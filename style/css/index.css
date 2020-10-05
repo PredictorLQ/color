@@ -458,6 +458,9 @@ button:focus {
 }
 
 .flex-maps-text {
+    line-height: 150%;
+    font-size: 18px;
+    color: #9CA2C0;
     margin-top: 30px;
 }
 
