@@ -615,7 +615,7 @@ button:focus {
 }
 
 .img-woomen img {
-    width: 100%;
+    float: right;
     height: 384px;
 }
 
