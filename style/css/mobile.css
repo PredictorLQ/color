@@ -18,7 +18,10 @@
 		line-height: 29px;
 		color: #FFFFFF;
 	}
-	.color-darkblue{
-	display: none;
+	.color-darkblue, .position-absolute, .bg-blue, .header-blue, .bg-green, .b-attrib-header, .text-right {
+		display: none;
+	}
+	.color-white {
+    		color: var(--black)!important;
 	}
 }
