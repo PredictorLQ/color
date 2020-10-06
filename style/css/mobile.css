@@ -30,9 +30,17 @@
 	.grid-header-button {
    	 	grid-template-columns: none;
 	}
+	
 	.mainimg {
    	position: absolute;
     	left: -150px;
 	}
+	
+	.top-logo {
+    	position: absolute;
+    	left: 29px;
+    	top: 19px;
+	}
+}
 }
 }
