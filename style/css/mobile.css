@@ -18,5 +18,7 @@
 		line-height: 29px;
 		color: #FFFFFF;
 	}
-
+	.color-darkblue{
+	display: none;
+	}
 }
