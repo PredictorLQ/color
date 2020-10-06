@@ -18,10 +18,16 @@
 		line-height: 29px;
 		color: #FFFFFF;
 	}
+	
 	.color-darkblue, .position-absolute, .bg-blue, .header-blue, .b-attrib-header, .text-right {
 		display: none;
 	}
+	
 	.color-white {
     		color: var(--black)!important;
+	}
+	
+	.grid-header-button {
+   	 	grid-template-columns: none;
 	}
 }
