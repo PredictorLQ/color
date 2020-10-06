@@ -41,6 +41,9 @@
     	left: 29px;
     	top: 19px;
 	}
-}
-}
+	
+	.flex-r.header-body {
+    	display: block;
+	}
+
 }
