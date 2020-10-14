@@ -19,23 +19,27 @@
 		color: #FFFFFF;
 	}
 	.header {
-    		padding: 0 30px 0;
+		padding: 0 30px 0;
+	}
+	.header-text {
+		display: none;
 	}
 	.color-darkblue, .position-absolute, .bg-blue, .header-blue, .b-attrib-header, .text-right {
 		display: none;
 	}
 	
 	.color-white {
-    		color: var(--black)!important;
+		color: var(--black)!important;
 	}
 	
 	.grid-header-button {
-   	 	grid-template-columns: none;
+		grid-template-columns: none;
 	}
 	
 	.mainimg {
-   	position: absolute;
-    	left: -150px;
+		padding: 0 30px;
+		position: absolute;
+		left: -51%;
 	}
 	
 	.top-logo {
