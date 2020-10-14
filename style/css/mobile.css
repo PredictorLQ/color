@@ -37,11 +37,11 @@
 	}
 	
 	.mainimg {
-		padding: 0 30px;
-		position: absolute;
-		left: -51%;
+		display: none;
 	}
-	
+	.mobileimg {
+		display: block;
+	}
 	.top-logo {
     	position: absolute;
     	left: 29px;
