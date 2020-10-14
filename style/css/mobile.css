@@ -28,8 +28,7 @@
 	.color-darkblue, .position-absolute, .bg-blue, .header-blue, .b-attrib-header, .text-right {
 		display: none;
 	}
-	
-	.color-white {
+	.black-mobile {
 		color: var(--black)!important;
 	}
 	
