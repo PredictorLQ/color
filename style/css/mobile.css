@@ -22,7 +22,8 @@
 		padding: 35px 0px 0px;
 	}
 	.header-text {
-		display: none;
+		display: block;
+		position: absolute;
 	}
 	.color-darkblue, .position-absolute, .bg-blue, .header-blue, .b-attrib-header, .text-right {
 		display: none;
