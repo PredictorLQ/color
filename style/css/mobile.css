@@ -34,8 +34,9 @@
 	
 	.grid-header-button {
 		grid-template-columns: none;
+		margin-top: 0px;
 	}
-	
+
 	.mainimg {
 		display: none;
 	}
