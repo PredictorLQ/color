@@ -32,7 +32,7 @@
 		color: var(--black)!important;
 	}
 	.header-body h1 {
-		margin-bottom: 0px;
+		margin: 0px 16px 0px 16px;
 	}
 	.grid-header-button {
 		grid-template-columns: none;
