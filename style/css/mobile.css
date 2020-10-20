@@ -34,6 +34,8 @@
 	}
 	.header-body h1 {
 		margin: 0px 16px 0px 16px;
+		line-height: 28px;
+
 	}
 	.grid-header-button {
 		grid-template-columns: none;
