@@ -24,6 +24,7 @@
 	.header-text {
 		display: block;
 		position: absolute;
+		top: 440px;
 	}
 	.color-darkblue, .position-absolute, .bg-blue, .header-blue, .b-attrib-header, .text-right {
 		display: none;
