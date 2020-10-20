@@ -31,7 +31,9 @@
 	.black-mobile {
 		color: var(--black)!important;
 	}
-	
+	.header-body h1 {
+		margin-bottom: 0px;
+	}
 	.grid-header-button {
 		grid-template-columns: none;
 		margin-top: 0px;
