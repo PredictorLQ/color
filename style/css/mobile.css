@@ -47,6 +47,7 @@
 	}
 	.mobileimg {
 		display: block;
+		width: 100%;
 	}
 	.top-logo {
     	position: absolute;
